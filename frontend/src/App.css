@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster+Two&display=swap');
+
+:root, html[data-theme = "dark"] {
+  --bg-color: rgb(10, 10, 10);
+  --text-color: rgb(255, 255, 255);
+  --font-body: "Lobster Two";
+  --font-author: "Great Vibes";
+  --icon-bg: rgba(238, 238, 238, 0.226);
+  --icon-color: white;
+}
+
+html[data-theme = "light"] {
+  --bg-color: rgb(255, 255, 255);
+  --text-color: rgb(0, 0, 0);
+  --font-body: "Lobster Two";
+  --font-author: "Great Vibes";
+  --icon-bg: rgba(3, 3, 3, 0.226);
+  --icon-color: rgb(0, 0, 0);
+}
+
+html[data-theme = "purple"] {
+  --bg-color: #53165F;
+  --text-color: #F0AE02;
+  --font-body: "Lobster Two";
+  --font-author: "Great Vibes";
+  --icon-bg: #ffd00048;
+  --icon-color: #F0AE02;
+
+}
+
+body {
+  padding: 10px;
+  margin:  0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  max-height: 100vh;
+  height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+  font-family: "Zilla Slab", "Helvetica Neue", "Helvetica";
+}
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.quote {
+  max-width: 380px;
+  min-width: 300px;
+  margin: 0 auto;
+  /* border: 1px solid #ffd500; */
+  padding: 10px;
+  /* border-radius: 1rem; */
+  text-align: center;
+  background-color: var(--bg-color);
+}
+
+.quote .type {
+  text-align: center;
+  font-family: "Times New Roman";
+  color: white;
+}
+
+.quote .content {
+  font-size: 1.5rem;
+  font-family: var(--font-body), "Helvetica Neue", sans-serif;
+}
+
+.capture {
+  position: relative;
+}
+
+.capture .icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  color: var(--icon-bg);
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  background: transparent ;
+  color: rgb(255, 196, 0);
+  border: 1px solid rgb(255, 196, 0);
+  border-radius: 10px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* background-color: ; */
+  /* width: 100vw; */
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  /* overflow-x: scroll; */
+  color: black;
+  display: flex;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+footer span {
+  margin-left: 40px;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--icon-color);
+
+}
+
+.react-icons {
+  font-size: 2rem;
+}
+
+footer span {
+  border: 5px solid rgb(255, 166, 0);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+}
+
+.theme-black {
+  background-color: black;
+  color: white;
+}
+
+.theme-white {
+  background-color: white;
+  color: black;
+}
+
+.theme-purple {
+  background-color: purple;
+  color: gold;
+}
