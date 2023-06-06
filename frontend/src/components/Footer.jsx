@@ -34,6 +34,17 @@ function Footer() {
             >
                 A
             </span>
+
+            <span className="theme-blue"
+                onClick={() => changeTheme('blue')}
+            >
+                A
+            </span>
+            <span className="theme-red"
+                onClick={() => changeTheme('red')}
+            >
+                A
+            </span>
         </footer>
      )
 }

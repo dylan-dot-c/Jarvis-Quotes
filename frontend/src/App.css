@@ -28,7 +28,23 @@ html[data-theme = "purple"] {
   --font-author: "Great Vibes";
   --icon-bg: #ffd00048;
   --icon-color: #F0AE02;
+}
 
+html[data-theme = "blue"] {
+  --bg-color: #074636;
+  --text-color: white;
+  --font-body: "Lobster Two";
+  --font-author: "Great Vibes";
+  --icon-bg: #50fc0073;
+  --icon-color: white;
+}
+html[data-theme = "red"] {
+  --bg-color: #D11628;
+  --text-color: white;
+  --font-body: "Lobster Two";
+  --font-author: "Great Vibes";
+  --icon-bg: #ffffff80;
+  --icon-color: white;
 }
 
 body {
@@ -124,11 +140,11 @@ footer {
   display: flex;
   padding: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 footer span {
-  margin-left: 40px;
+  
   color: white;
 }
 
@@ -143,18 +159,35 @@ footer span {
 
 }
 
+.buttons span {
+  color: var(--text-color);
+
+}
+
+.buttons span:hover {
+  color: yellow;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
 .react-icons {
   font-size: 2rem;
 }
 
 footer span {
-  border: 5px solid rgb(255, 166, 0);
+  border: 2px solid rgb(230, 255, 243);
   border-radius: 50%;
   width: 50px;
   height: 50px;
   display: grid;
   place-items: center;
   font-weight: 800;
+  transition: 300ms ease-in;
+}
+
+footer span:hover {
+    cursor: pointer;
+    border: 10px solid rgb(224, 224, 224);
 }
 
 .theme-black {
@@ -170,4 +203,12 @@ footer span {
 .theme-purple {
   background-color: purple;
   color: gold;
+}
+.theme-blue {
+  background-color: #074636;
+  color: white;
+}
+.theme-red {
+  background-color: #D11628;
+  color: white;
 }
