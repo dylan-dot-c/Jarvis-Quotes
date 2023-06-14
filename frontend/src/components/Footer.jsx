@@ -10,12 +10,8 @@ function Footer() {
     }
 
     useEffect( () => {
-
         changeTheme(theme);
-
     }, [theme])
-
-    
 
     return(
         <footer>

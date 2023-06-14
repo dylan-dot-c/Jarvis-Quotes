@@ -1,10 +1,9 @@
-
-
 function Navbar() {
 
     return (
         <nav>
-            <h1 align="center">Jarvis Quotes</h1>
+            <h1>Motivational Quotes</h1>
+            <p>Get Inspired Son and Wendy.</p>
         </nav>
     )
 }
