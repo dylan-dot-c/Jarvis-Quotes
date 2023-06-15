@@ -6,7 +6,7 @@ function PreLoader() {
 
             </div>
             <p>Loading...</p>
-            <p>You sure do look beautiful today.</p>
+            <p>Today will be a good day.</p>
         </div>
     )
 
