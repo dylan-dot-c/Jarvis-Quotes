@@ -6,7 +6,7 @@ function Quote({quote}) {
         <div className="quote">
             <p className="type">{quoteGenre}</p>
 
-            <p className="content">{`"${quoteText}”`}</p>
+            <p className="content" contentEditable>{`"${quoteText}”`}</p>
 
             <p className="author"> ~ <i>{quoteAuthor}</i> ~</p>
         </div>
