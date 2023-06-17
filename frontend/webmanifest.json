@@ -1,19 +1,24 @@
 {
-    "name": "My PWA",
-    "short_name": "PWA",
-    "description": "A progressive web app example",
+    "name": "Motivational Quotes",
+    "short_name": "Moti Quotes",
+    "description": "Simple app to give you motivation + 50 more different genres of quotes to help you in any area of life.",
     "start_url": "/",
     "display": "standalone",
-    "theme_color": "#ffffff",
+    "theme_color": "orange",
     "background_color": "#ffffff",
     "icons": [
+        {
+            "src": "/quotation.png",
+            "sizes": "144x144",
+            "type": "image/svg"
+          },
       {
         "src": "/vite.svg",
         "sizes": "192x192",
         "type": "image/svg"
       },
       {
-        "src": "/quotes.png",
+        "src": "/quotation.png",
         "sizes": "512x512",
         "type": "image/png"
       }
